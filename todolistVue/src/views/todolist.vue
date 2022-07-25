@@ -28,7 +28,7 @@ export default defineComponent({
   setup() {
     const items = ref<todoItem[]>([]);
     const getList = () => {
-      console.log("get list starting...");
+      //console.log("get list starting...");
       axios
         .get("http://127.0.0.1:8000/api/items")
         .then((response) => {

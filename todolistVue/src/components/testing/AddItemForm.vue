@@ -24,7 +24,7 @@ export default defineComponent({
       completed: 0
     });
     const addItem = () => {
-      console.log("start adding ...");
+      //console.log("start adding ...");
        if (item.value.name == '') {
         return;
       }
