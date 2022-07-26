@@ -18,7 +18,7 @@ import todoItem from "@/types/todoItem";
 export default defineComponent({
   emits: ['reloadlist'],
   setup(props, ctx) {
-    const item = ref<todoItem>({
+    const item = ref({
       //id: 0,
       name:'',
       completed: 0
