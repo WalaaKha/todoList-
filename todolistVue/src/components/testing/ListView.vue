@@ -3,7 +3,7 @@
     <div v-for="(item, index) in items" :key="index">
       <list-item
         :item="item"
-        v-on:statusChanged="(completed) => item.completed = completed"
+        v-on:statusChanged="(completed) => item.completed = !item.completed"
         v-on:itemChanged="$emit('reloadlist')"
         class="item"
       />
